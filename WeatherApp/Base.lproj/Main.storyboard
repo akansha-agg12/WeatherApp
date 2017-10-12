@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset_view3" translatesAutoresizingMaskIntoConstraints="NO" id="lt7-ZD-FlK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1S5-sb-svs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.6281590588" blue="0.050152320239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.6281590588" blue="0.050152320239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii3-Z8-l3C">
+                                <rect key="frame" x="164" y="134" width="46" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-LC-0y4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="1" green="0.62815905877521916" blue="0.050152320238938897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-OE-n62">
+                                <rect key="frame" x="93.5" y="96" width="188.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iME-K9-oaX">
+                                        <rect key="frame" x="0.0" y="0.0" width="188.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPr-TO-aZ1">
+                                <rect key="frame" x="223.5" y="160.5" width="65" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="HoF-Qd-t87"/>
+                                    <constraint firstAttribute="height" constant="66" id="Rvf-P2-GGM"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVa-D0-LMP">
+                                <rect key="frame" x="159.5" y="163.5" width="56" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vFb-LC-0y4" secondAttribute="trailing" id="3wF-Qi-0ma"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lt7-ZD-FlK" secondAttribute="bottom" id="4CH-RY-lg0"/>
+                            <constraint firstItem="LuA-OE-n62" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQH-3J-1Gn"/>
+                            <constraint firstItem="1S5-sb-svs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FbO-8m-sDU"/>
+                            <constraint firstItem="oVa-D0-LMP" firstAttribute="top" secondItem="ii3-Z8-l3C" secondAttribute="bottom" constant="8" id="FvM-lx-lGo"/>
+                            <constraint firstAttribute="trailing" secondItem="lt7-ZD-FlK" secondAttribute="trailing" id="JVc-Q1-rJ1"/>
+                            <constraint firstItem="oVa-D0-LMP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4j-DI-up0"/>
+                            <constraint firstItem="ii3-Z8-l3C" firstAttribute="top" secondItem="LuA-OE-n62" secondAttribute="bottom" constant="8" id="P2a-i4-gw5"/>
+                            <constraint firstItem="lt7-ZD-FlK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Spc-4I-9rg"/>
+                            <constraint firstItem="vFb-LC-0y4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WKy-ZT-Xap"/>
+                            <constraint firstItem="vFb-LC-0y4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YWN-wY-uSQ"/>
+                            <constraint firstItem="LuA-OE-n62" firstAttribute="top" secondItem="vFb-LC-0y4" secondAttribute="bottom" constant="32" id="lfo-Qk-FqF"/>
+                            <constraint firstItem="lt7-ZD-FlK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nYp-LY-vkh"/>
+                            <constraint firstItem="TPr-TO-aZ1" firstAttribute="leading" secondItem="oVa-D0-LMP" secondAttribute="trailing" constant="8" id="rM8-qj-8O2"/>
+                            <constraint firstItem="ii3-Z8-l3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wNY-bh-fqf"/>
+                            <constraint firstItem="TPr-TO-aZ1" firstAttribute="centerY" secondItem="oVa-D0-LMP" secondAttribute="centerY" id="yNb-vW-kMn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="iME-K9-oaX" id="Bjf-1W-NDj"/>
+                        <outlet property="conditionLbl" destination="ii3-Z8-l3C" id="qlF-wW-5S4"/>
+                        <outlet property="degreeLbl" destination="oVa-D0-LMP" id="jZ9-W2-KPa"/>
+                        <outlet property="imgView" destination="TPr-TO-aZ1" id="iCk-XL-lc2"/>
+                        <outlet property="searchBar" destination="vFb-LC-0y4" id="taN-kH-Ylv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunset_view3" width="2560" height="1600"/>
+    </resources>
+</document>
